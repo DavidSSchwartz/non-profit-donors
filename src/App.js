@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import AddForm from './features/Add/AddForm';
+import Panes from './features/panes/Panes';
+import SearchBar from './features/search/SearchBar';
+import SortDropdown from './features/Sort/SortDropdown';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <AddForm />
+      </div>
+      <div className = "main-content">
+        <div className = "panes-actions">
+          <SortDropdown />
+          <SearchBar />
+        </div>
+        <div className = "panes-display">
+          <Panes />
+        </div>
+      </div>
     </div>
   );
 }

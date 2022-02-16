@@ -1,0 +1,80 @@
+.panes-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    grid-column-gap: 50px;
+    grid-row-gap: 60px;
+}
+
+.pane {
+    border: 1px solid darken($light-grey, 5%);
+    height: 180px;
+    border-radius: 3px;
+}
+    
+.pane-basic-info {
+    background-color: #f2f4ff;
+    width: 100%;
+    height: 50%;
+    padding-top: 1.5rem;
+}
+
+.pane-amount {
+    font-size: 2.5rem;
+}
+
+.pane-name {
+    font-size: 1.2rem;
+    color: $dark-grey;
+    font-weight: 700;
+}
+
+.pane-extra-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: auto;
+    height: calc(50% - 1.5rem);
+    width: 100%;
+}
+
+
+.panes-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin: 0 1.5rem;
+    padding: 2rem 0;
+    .search-bar {
+        position: relative;
+    }
+    input, select {
+        border-radius: 30px;
+        padding-left: 10px;
+        font-size: 1.2rem;
+        border-color: $dark-grey;
+        border-style: solid;
+    }
+    svg {
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        font-size: .9rem;
+        color: $dark-grey;
+    }
+    select, span {
+        color: $dark-grey;
+    }
+    select {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-width: 2px;
+    }
+    span {
+        font-size: 1.2rem;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+}

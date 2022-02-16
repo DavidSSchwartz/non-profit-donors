@@ -1,0 +1,14 @@
+@import './colors.scss';
+@import './add-form.scss';
+@import './panes';
+
+
+.main-content {
+    background-color: $light-grey;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

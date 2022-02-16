@@ -1,0 +1,30 @@
+.add-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: $alice-blue;
+    border-bottom: 1px solid #ededed;
+    .add-form-fields {
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        label, input {
+            font-size: 1.2rem;
+        }
+        label {
+            margin-right: 10px;
+        }
+    }
+    .add-button {
+        background-color: $light-grey;
+        border: 1px solid $dark-grey;
+        font-size: 1.2rem;
+        border-radius: 3px;
+        padding: 0.5rem 0.8rem;
+        cursor: pointer;
+        &:hover, &:focus {
+            background-color: darken($light-grey, 15%);
+        }
+    }
+}
