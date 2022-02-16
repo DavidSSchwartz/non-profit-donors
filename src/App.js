@@ -1,8 +1,8 @@
 import './App.css';
-import AddForm from './features/add/AddForm';
+import AddForm from './features/Add/AddForm';
 import Panes from './features/panes/Panes';
 import SearchBar from './features/search/SearchBar';
-import SortDropdown from './features/sort/SortDropdown';
+import SortDropdown from './features/Sort/SortDropdown';
 
 function App() {
   return (
