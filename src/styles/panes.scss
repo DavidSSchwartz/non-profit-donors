@@ -1,6 +1,6 @@
 .panes-display {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 2rem;
     grid-column-gap: 50px;
     grid-row-gap: 60px;
@@ -44,9 +44,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap-reverse;
     margin: 0 1.5rem;
     padding: 2rem 0;
+    @media screen and (max-width: 515px) { 
+        flex-direction: column-reverse;
+        .sort-dropdown {
+            align-self: flex-start;
+        }
+        .search-bar {
+            margin-bottom: 2rem;
+            width: 80%;
+            input {
+                height: 2rem;
+                width: 100%;
+            }
+            svg {
+                font-size: 1rem;
+                top: 10px;
+                right: 0;
+            }
+        }
+    }
     .search-bar {
         position: relative;
     }

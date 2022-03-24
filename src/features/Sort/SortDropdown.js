@@ -5,7 +5,7 @@ const SortDropdown = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>
+        <div className="sort-dropdown">
             <span>
                 Order by:
             </span>

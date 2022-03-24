@@ -45,7 +45,7 @@ const AddForm = () => {
                 <div>
                     <label htmlFor="amount">Donated by:</label>
                     <input 
-                        type = "text" 
+                        type = "text"
                         value = {donatedBy}
                         id = "name"
                         onChange = {handleDonatedByChange}

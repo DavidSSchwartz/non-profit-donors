@@ -5,6 +5,24 @@
     padding: 2rem;
     background-color: $alice-blue;
     border-bottom: 1px solid #ededed;
+    @media screen and (max-width: 900px) {
+        padding: 2rem .5rem;   
+        .add-form-fields {
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 1rem;
+            > div {
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: .2rem;
+                }
+                input {
+                    margin-bottom: .8rem;
+                }
+            }
+        }
+    }
     .add-form-fields {
         display: flex;
         justify-content: space-evenly;
